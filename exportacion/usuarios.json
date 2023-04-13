@@ -1,0 +1,11 @@
+[
+{"type":"header","version":"5.1.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"cursoaplicacionesweb"},
+{"type":"table","name":"usuarios","database":"cursoaplicacionesweb","data":
+[
+{"Indentificador":"1","usuario":"oroncio66","password":"Oro280166","nombres":"Francisco Oroncio","apellidos":"Chacón Torres","email":"oroncio66@gmail.com","direccion":"Av Municipal Torre Porteña Psio 16 apto16-1, Puerto la Cruz","telefono":"+584248731479"},
+{"Indentificador":"2","usuario":"PEDRO45","password":"pedro0125","nombres":"pedroJose25","apellidos":"Pedro Jose","email":"pedro2543@gmail.com","direccion":"La Calle de pedro","telefono":"+58444247586"},
+{"Indentificador":"3","usuario":"maria2543","password":"mj25689","nombres":"Maria Josefina","apellidos":"Carmona Perez","email":"mariajose25@gmail.com","direccion":"calle de maria","telefono":"+584240745268"}
+]
+}
+]

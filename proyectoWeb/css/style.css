@@ -1,0 +1,163 @@
+@font-face {
+    font-family: capitaly;
+    src: url("../fonts/AnandaBlackPersonalUseRegular-rg9Rx.ttf");
+  }
+  @font-face {
+    font-family: farrah;
+    src: url("../fonts/Farrah-Bold.otf");
+  }
+/* 
+Esto es un comentario 
+*/
+/*
+sintasis de escritura de CSS
+selector{   
+    propiedad: valor;
+    propiedad: valor;
+    propedad: valor;
+    ...
+}
+*/
+/*
+    palabra suelata -> etiqueta
+    almuadilla "#"  -> id
+    punto "."       -> class     
+*/
+/* //////// ETILOS GENERALES /// */
+p{
+    color: rgb(30,0,30);
+}
+h1,h2,h3,h4,h5,h6,ul,li,p{
+    color:rgb(30,30,30);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+header,main,footer{
+    width: 800px;
+    margin: auto;
+    background: rgb(245,245,245);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 20px;
+}
+body{
+    background: rgb(200,200,200);
+    font-family: sans-serif;
+}
+/* //////// AQUI VA LA CABECERA /// */
+#imagen__logo{
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+}
+h1{
+    font-family: farrah;
+    font-size: 40px;
+    color: red;
+    text-align: center;
+    border-bottom: 5px solid blue;
+}
+h2{
+    font-family: capitaly;
+}
+
+/* //////// AQUI VA EL MENU DE NAVEGACION /// */
+nav ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+nav ul{
+    padding: 0px;
+    margin: 0px;
+}
+nav ul li{
+    padding: 5px;
+    margin: 1px;
+    list-style-type: none;
+    float: left;
+    background: rgb(0,0,0);
+    color: rgb(255,255,255);
+    text-transform: uppercase;
+    width: 70px;
+    font-size: 10px;
+    text-align: center;
+    transition: all 200ms;
+}
+/* clear: both ayuda para que luego de la insruccion float, 
+no siga pegado con el siguiente elemento flotando */
+.clear__fix{
+    clear: both;
+}
+nav ul li:first-child{
+    border-radius: 15px 0px 0px 15px;
+}
+nav ul li:last-child{
+    border-radius: 0px 15px 15px 0px;
+}
+nav ul li:hover{
+    background-color: rgb(215,215,215);
+    color: rgb(0,0,0);
+}
+
+/* //////// HASTA AUI VA EL MENU DE NAVEGACION /// */
+
+/* ////////  AQUI VA EL CARRUSEL /// */
+#carousel #contenedor__carousel .diapositiva img{
+    width: 100%;
+}
+#carousel #contenedor__carousel .diapositiva{
+    width: 800px;
+    height: 600px;
+    float: left;
+}
+#contenedor__carousel{
+    overflow: hidden;
+
+}
+.mascara{
+    width: 4200px;
+    height: 600px;
+    animation: nueve 10s;
+    animation-iteration-count: infinite; 
+    position: relative; 
+}
+@keyframes nueve{
+    0%{left: 0px;}
+    20%{left: 0px;}
+    25%{left: -800px;}
+    45%{left: -800px;}
+    50%{left: -1600px;}
+    70%{left: -1600px;}
+    75%{left: -2400px;}
+    95%{left: -2400px;}
+    100%{left: -3200px;}
+}
+
+/* //////// HASTA AQUI VA EL CARRUSEL /// */
+
+/* //////// AQUI DESTACADOS PAGINA PINCIPAL /// */
+#hightlight .blog_article{
+    width: 50%;
+    float: left;
+}
+#hightlight .blog_article img{
+    width: 100%;
+}
+#hightlight .blog_article .contien_articulo{
+    padding: 10px;
+}
+/* //////// FIN DESTACADOS PAGINA PINCIPAL /// */
+
+
+/* //////// AQUI BLOG PAGINA PINCIPAL /// */
+#blog .blog_article{
+    width: 25%;
+    float: left;
+}
+#blog .blog_article img{
+    width: 100%;
+}
+#blog .blog_article .contien_articulo{
+    padding: 10px;
+}
+/* //////// FIN BLOG PAGINA PINCIPAL /// */

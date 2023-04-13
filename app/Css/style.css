@@ -1,0 +1,156 @@
+html,body{
+    background: rgb(80,80,80); 
+    color:white;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+/*  ///////////// ESTILO PASA FOTOS  ////////// */
+main{
+    height: 100%;
+}
+header{
+    height: 50%;
+}
+section article{
+    width: 200px; 
+    height: 200px; 
+    float: left;
+    border: 1px solid white;
+    position: relative;
+    margin: 10px;
+    transform: scale(1,1);
+    z-index: 1;
+    transition: all 600ms;
+}
+section article img{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+section article h3, section article h4, section article p{
+    position: absolute;
+}
+.aumentado{
+    transform: scale(1.25,1.25);
+    z-index: 1000;
+    border: 5px solid yellow;
+    box-shadow: 0px 0px  25px 0px  rgb(136, 143, 56);
+}
+section{
+    padding-top: 50px;
+    width: 100%;
+    height: 390px;
+    overflow: hidden;
+}
+section .ribbon{
+    width: 4000px;
+    position: relative;
+    left: 0px;
+    transition: all 600ms;
+}
+.boton__redondo{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background: rgb(220,220,220);
+    color: rgb(50,50,50);
+    font-size: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+}
+.botones{
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+}
+.anterior{
+    top: 100px;
+    left: 20px;
+    transform: rotate(180deg);
+}
+.posterior{
+    right: 20px;
+    top: 100px;
+}
+/*  ///////////// FIN ESTILO PASA FOTOS  ////////// */
+
+/* //////////////// ESTILO DEL DESTACADO ////////////  */
+#destacado{
+    position: absolute;
+    width: 60%;
+    right: 0px;
+    height: 100%;
+    top: 0px;
+    height: 500Px;
+    overflow: hidden;
+    box-shadow: 0px 0px 80px 80px black inset;
+}
+#destacado img{
+    width: 100%;
+    opacity: 0.5;
+    
+}
+#destacado h2, #destacado h3, #destacado p{
+    position: absolute;
+    top: 0px;
+}
+/* //////////////// fin ESTILO DEL DESTACADO ////////////  */
+
+/* ////////////////  ESTILO DE LOS DETALLES ////////////  */
+.detalles{
+    width: 100%;
+    height: 0px;
+    background: rgb(40,40,40);
+    box-shadow: 0Px 0Px 30px 30px black inset;
+    overflow: hidden;
+    transition: all 600ms;
+    position: relative;
+}
+.abierto{
+    height: 400px;
+}
+.muyAbierto{
+    height: 800px;
+}
+.detalles h2, .detalles h3, .detalles p, .detalles button{
+    position: absolute;
+   
+}
+.detalles h2{
+    top: 20px;
+    left: 20px;
+}
+.detalles h3{
+    top: 50px;
+    left: 20px;
+}
+.detalles p{
+    top: 80px;
+    left: 20px;
+}
+.detalles button{
+    bottom: 20px;
+    left: 20px;
+    background:    #c3cbc9;
+    border-radius: 11px;
+    padding:       20px 45px;
+    color:         #040404;
+    display:       inline-block;
+    font:          normal bold 26px/1 "Open Sans", sans-serif;
+    text-align:    center;
+    border: 0px;
+    opacity: .40;
+        
+}
+.detalles img{
+    width: 30%;
+    opacity: 0.5;
+}
+
+
+/* //////////////// fin ESTILO DE LOS DETALLES ////////////  */

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.1.1
+- https://www.phpmyadmin.net
+-
+- Servidor: 127.0.0.1
+- Tiempo de generación: 30-01-2023 a las 23:05:24
+- Versión del servidor: 10.4.22-MariaDB
+- Versión de PHP: 8.0.13
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="cursoaplicacionesweb" collation="utf8mb4_spanish_ci" charset="utf8mb4">
+            <pma:table name="usuarios">
+                CREATE TABLE `usuarios` (
+                  `Indentificador` int(255) NOT NULL AUTO_INCREMENT,
+                  `usuario` varchar(255) COLLATE utf8mb4_spanish_ci NOT NULL,
+                  `password` varchar(255) COLLATE utf8mb4_spanish_ci NOT NULL,
+                  `nombres` varchar(255) COLLATE utf8mb4_spanish_ci NOT NULL,
+                  `apellidos` varchar(255) COLLATE utf8mb4_spanish_ci NOT NULL,
+                  `email` varchar(255) COLLATE utf8mb4_spanish_ci NOT NULL,
+                  `direccion` varchar(255) COLLATE utf8mb4_spanish_ci NOT NULL,
+                  `telefono` varchar(255) COLLATE utf8mb4_spanish_ci NOT NULL,
+                  PRIMARY KEY (`Indentificador`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci COMMENT='Aqui voy a guardar la nformacion de los usurios';
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Base de datos: 'cursoaplicacionesweb'
+    -->
+    <database name="cursoaplicacionesweb">
+        <!-- Tabla usuarios -->
+        <table name="usuarios">
+            <column name="Indentificador">1</column>
+            <column name="usuario">oroncio66</column>
+            <column name="password">Oro280166</column>
+            <column name="nombres">Francisco Oroncio</column>
+            <column name="apellidos">Chacón Torres</column>
+            <column name="email">oroncio66@gmail.com</column>
+            <column name="direccion">Av Municipal Torre Porteña Psio 16 apto16-1, Puerto la Cruz</column>
+            <column name="telefono">+584248731479</column>
+        </table>
+        <table name="usuarios">
+            <column name="Indentificador">2</column>
+            <column name="usuario">PEDRO45</column>
+            <column name="password">pedro0125</column>
+            <column name="nombres">pedroJose25</column>
+            <column name="apellidos">Pedro Jose</column>
+            <column name="email">pedro2543@gmail.com</column>
+            <column name="direccion">La Calle de pedro</column>
+            <column name="telefono">+58444247586</column>
+        </table>
+        <table name="usuarios">
+            <column name="Indentificador">3</column>
+            <column name="usuario">maria2543</column>
+            <column name="password">mj25689</column>
+            <column name="nombres">Maria Josefina</column>
+            <column name="apellidos">Carmona Perez</column>
+            <column name="email">mariajose25@gmail.com</column>
+            <column name="direccion">calle de maria</column>
+            <column name="telefono">+584240745268</column>
+        </table>
+    </database>
+</pma_xml_export>

@@ -1,0 +1,33 @@
+<html>
+    <head>
+       <style>
+        .dia{width:100px;Height:100px;border:1px solid grey;float:left;}
+    
+       </style>
+
+    </head>
+    <body>
+        <!-- como elaborar un calendario con JavaScritp -->
+        <div id="calendario">
+            
+
+            </div>
+        </div>
+        <script>
+            for(var year = 2000;year<=2025; year++){
+                document.write("<div style='clear:both'></div> ")
+                document.write("<h1>Este es el Año: "+year+"</h1><br>")
+                    for(var mes=1;mes<=12;mes++){
+                        document.write("<div style='clear:both'></div> ")
+                        document.write("<h2>Este es el mes: "+mes+" del año: "+year+"</h2><br>")
+                            for(var dia=1; dia<=30; dia++){
+                                document.write("<div class='dia'>"+dia+"</diV>")
+                                    if(dia% 7 == 0){
+                                        document.write("<div style='clear:both'></div> ")
+                                    }
+                            }
+                    } 
+            }  
+        </script>
+    </body>
+</html>

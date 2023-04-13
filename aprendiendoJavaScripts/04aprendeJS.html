@@ -1,0 +1,49 @@
+<html>
+    <head>
+       <style>
+        .dia{width:100px;Height:100px;border:1px solid grey;float:left;}
+    
+       </style>
+
+    </head>
+    <body>
+        <!-- como elaborar un calendario con JavaScritp -->
+        <div id="calendario">
+            
+
+            </div>
+        </div>
+        <script>
+            // funcion descargada de internet para averiguar los dias de un mes que tiene un año
+            var getDaysInMonth = function(month,year) {return new Date(year, month, 0).getDate();};
+
+            for(var year = 2010;year<=2025; year++){                                                    // recorrido de los años del 2020 al 2025
+                document.write("<div style='clear:both'></div> ");                                       // salto de linea con un Clear
+                document.write("<h1>Este es el Año: "+year+"</h1><br>");
+
+                for(var mes=1;mes<=12;mes++){                                                           // Recorro los 12 meses del añ0
+
+                        document.write("<div style='clear:both'></div> ");                               // salto de linea con un Clear
+                        document.write("<h2>Este es el mes: "+mes+" del año: "+year+"</h2><br>");
+
+                        var cuentadia = 1;                                                              // variable comun para contar diar rellenos y vacios
+                        var date =  new Date(), y = year, m = mes-1;                                    // crea un fecha en javascript teniendo en cuenta año y mes
+                        var firstDay = new Date(y, m, 1);                                               // Calculo el dia inicial del mes
+
+                            for(var diasenblanco = 1;diasenblanco < firstDay.getDay();diasenblanco++){  // repito para tantos dias en blanco tenga el mes
+                                document.write("<div class='dia'></diV>");                              // escribe en html una casilla vacia
+                                    cuentadia++;                                                        // aumento el contador de la variable
+                            }
+                            for(var dia=1; dia<= getDaysInMonth(mes, year); dia++){                     // recorro los dias reales que tiene el mes
+                                document.write("<div class='dia'>"+dia+"</diV>");                        // coloco el dia del mes en la casilla
+                                    if(cuentadia% 7 == 0){                                              // si la varaiable ha lleagdo a los 7 dias d ela semana
+                                        document.write("<div style='clear:both'></div> ");              // en ese caso flota(hace un salto de a linea)
+                                    }
+                                    cuentadia++;                                                        // dento del bucl de los dias aumento el conatdor de la variable
+                            }
+                            
+                    } 
+            }  
+        </script>
+    </body>
+</html>
